@@ -1,0 +1,90 @@
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>For Eli 💜</title>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  overflow: hidden;
+  background: linear-gradient(135deg, lavender, #ffd6e8);
+  font-family: 'Georgia', serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #7a003c;
+}
+
+.container {
+  text-align: center;
+  z-index: 3;
+  padding: 20px;
+}
+
+/* Typewriter text */
+.typewriter {
+  font-size: 26px;
+  min-height: 70px;
+}
+
+/* Heart animation */
+.heart {
+  margin: 25px auto;
+  font-size: 55px;
+  animation: beat 1.4s infinite;
+}
+
+@keyframes beat {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.25); }
+}
+
+/* Envelope */
+.envelope {
+  margin: 30px auto;
+  width: 180px;
+  height: 120px;
+  background: #fff;
+  position: relative;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 8px 18px rgba(0,0,0,0.3);
+  overflow: hidden;
+}
+
+.flap {
+  position: absolute;
+  width: 100%;
+  height: 60%;
+  background: #ff5c8a;
+  clip-path: polygon(0 0, 100% 0, 50% 100%);
+  transform-origin: top;
+  transition: transform 1s ease;
+}
+
+.paper {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: #ff5c8a;
+}
+
+.envelope.open .flap {
+  transform: rotateX(180deg);
+}
+
+/* Final message */
+.final {
+  display:
